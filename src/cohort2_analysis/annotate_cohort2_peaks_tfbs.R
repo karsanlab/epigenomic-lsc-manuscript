@@ -10,6 +10,7 @@ library(LOLA)
 library(annotatr)
 library(Seurat)
 library(Signac)
+library(umap)
 library(here)
 library(tidyverse)
 

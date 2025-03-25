@@ -56,6 +56,11 @@ These can be downloaded here:
 - PMID_23727019 - ELK1: https://ars.els-cdn.com/content/image/1-s2.0-S1097276513003353-mmc3.xlsx
 - PMID_23727019 - ERK2: https://ars.els-cdn.com/content/image/1-s2.0-S1097276513003353-mmc2.xlsx
 
+For the HiChIP analysis these specific datasets were extracted from the LOLA database:
+
+- CTCF narrowpeaks: wgEncodeAwgTfbsUtaMcf7CtcfUniPk.narrowPeak as "ctcf_narrowpeaks.bed"
+- ZNF143 narrowpeaks: wgEncodeAwgTfbsSydhH1hescZnf143IggrabUniPk.narrowPeak as "znf143_narrowpeaks.bed"
+
 ## Replication Timing
 
 Repli-seq data used in our CNV analysis was from Hansen et. al, 2010. 
@@ -89,3 +94,31 @@ https://stuartlab.org/signac/reference/blacklist_hg38_unified
 It was derived from the [ENCODE Unified GRCh38 Exclusion List](https://www.encodeproject.org/files/ENCFF356LFX/).
 
 It was exported to a bed using `export.bed()` for use in the wrapper script. 
+
+## Encode CTCF peak file
+
+The ENCODE CTCF peak file used for initial QC analysis of the HiChIP data is available for download here:
+
+https://www.encodeproject.org/files/ENCFF017XLW/@@download/ENCFF017XLW.bed.gz
+
+## HiChIP scripts  
+
+The script `get_qc.py` used for `qc_analysis.sh` was developed by Dovetail Genomics. The github repository for the code is available here:
+
+https://github.com/dovetail-genomics/HiChiP.git
+
+## HiChIP conda environment
+
+The specification file to recreate the conda environment used in the HiChIP analysis can be found in this resource folder as:
+
+`hichip_conda_environment_spec_file.txt`
+
+To recreate the environment run:
+
+`conda create --name hichip_conda_environment --file hichip_conda_environment_spec_file.txt`
+
+## Fithichip config file
+
+The program `fithichip` requires a config file. The file used for our experiment is provided here as:
+
+`fithichip_config_file`
