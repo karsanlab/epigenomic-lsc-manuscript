@@ -36,6 +36,7 @@ aza_and_farlik_tfbs_methylation.tib <-
     set_names(str_remove(., "data") %>%
                   str_remove(".cons.*") %>%
                   str_remove("^[\\d]+_")) %>%
+	map(~ read_csv(.x)) %>%
     bind_rows() %>%
     calculate_normalization_stats()
 

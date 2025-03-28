@@ -36,20 +36,20 @@ downreg_vyas_tfs <- vyas_de %>%
 results <- readRDS(here("results", "Cohort2_FindMarkers_DEGs.rds"))
 
 upreg_response <- results %>%
-    filter(p_val_adj < 0.001, avg_log2FC >= 0.15) %>%
+    filter(p_val_adj < 0.001, avg_log2FC >= 0.05) %>%
     rownames()
 
 upreg_response_tfs <- results %>%
-    filter(p_val_adj < 0.001, avg_log2FC >= 0.15) %>%
+    filter(p_val_adj < 0.001, avg_log2FC >= 0.05) %>%
     rownames() %>%
     intersect(tf_names)
 
 downreg_response <- results %>%
-    filter(p_val_adj < 0.001, avg_log2FC <= -0.15) %>%
+    filter(p_val_adj < 0.001, avg_log2FC <= -0.05) %>%
     rownames()
 
 downreg_response_tfs <- results %>%
-    filter(p_val_adj < 0.001, avg_log2FC <= -0.15) %>%
+    filter(p_val_adj < 0.001, avg_log2FC <= -0.05) %>%
     rownames() %>%
     intersect(tf_names)
 
