@@ -1,21 +1,21 @@
-# The epigenomic state of leukemic stem cells determines hypomethylating agent response in myeloid malignancies
+# Initial leukemic epigenomic state determines hypomethylating agent response
 
-## Cohort 1: Single-cell Whole Genome Bisulfite Sequencing Analysis
+## Single-cell Whole Genome Bisulfite Sequencing Analysis of Cohort 1
 
 ![](Cohort1_Workflow.png)
 
-## Cohort 2: Single-cell Multiomic Analysis
+## Single-cell Multiomic Analysis of Cohort 2
 
 ![](Cohort2_Workflow.png)
 
-## Cohort 3: Single-cell ATAC Analysis
+## Single-cell ATAC Analysis of Cohort 3
 
 ![](Cohort3_Workflow.png)
 
-# Cell Line: HiChIP Analysis
+# HiChIP Analysis of OCI-AML3 Cell Line
 
 ![](CellLine_Workflow.png)
 
-# Normals Analysis
+# Analysis of Normal Samples
 
 ![](Normal_Workflow.png)
